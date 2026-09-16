@@ -1,0 +1,32 @@
+{% extends "admin/base.html" %}
+
+{% load static %}
+
+{% block title %}
+Paraclete Classical International School | Administration
+{% endblock %}
+
+{% block branding %}
+
+<div id="site-name">
+    <a href="{% url 'admin:index' %}">
+        Paraclete Classical International School
+    </a>
+</div>
+{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+
+<link rel="stylesheet" href="{% static 'admin/css/custom_admin.css' %}">
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+
+<script src="{% static 'admin/js/custom_admin.js' %}" defer></script>
+
+{% endblock %}
+
+{% block nav-global %}
+{% endblock %}

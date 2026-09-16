@@ -1,0 +1,1825 @@
+/* =========================================================
+   PARACLETE CLASSICAL INTERNATIONAL SCHOOL
+   DJANGO ADMIN - GREEN + FAINT RED
+   WITH CLEAR ADMISSIONS NAVIGATION
+
+   GREEN       = #198754
+   DARK GREEN  = #146c43
+   SOFT GREEN  = #e8f4ed
+
+   FAINT RED   = #f9e8e8
+   SOFT RED    = #c94c4c
+   DARK RED    = #a83232
+
+   LIGHT GREY  = #f4f6f5
+   BORDER GREY = #d9e1dc
+
+   WHITE       = #ffffff
+
+   NO BLUE
+   NO BLACK
+   FULL WIDTH
+   RESPONSIVE
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL ADMIN BODY
+   ========================================================= */
+
+html,
+body {
+    background: #f4f6f5 !important;
+    color: #34423a !important;
+
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    transition: all 0.2s ease !important;
+}
+
+
+/* =========================================================
+   2. TOP HEADER
+   ========================================================= */
+
+#header {
+    background: #198754 !important;
+    color: #ffffff !important;
+
+    width: 100% !important;
+    min-height: 64px !important;
+
+    box-sizing: border-box !important;
+
+    padding: 0 25px !important;
+
+    display: flex !important;
+    align-items: center !important;
+}
+
+
+/* Branding */
+
+#branding {
+    display: flex !important;
+    align-items: center !important;
+}
+
+
+#branding h1,
+#branding h1 a {
+    color: #ffffff !important;
+
+    font-weight: 700 !important;
+
+    text-decoration: none !important;
+
+    letter-spacing: 0.3px !important;
+}
+
+
+/* Header links */
+
+#header a:link,
+#header a:visited {
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+}
+
+
+#header a:hover {
+    color: #f9e8e8 !important;
+
+    text-decoration: none !important;
+}
+
+
+/* =========================================================
+   3. USER TOOLS
+   ========================================================= */
+
+#user-tools {
+    color: #ffffff !important;
+
+    font-size: 13px !important;
+}
+
+
+#user-tools a {
+    color: #ffffff !important;
+
+    font-weight: 500 !important;
+}
+
+
+#user-tools a:hover {
+    color: #f9e8e8 !important;
+}
+
+
+/* =========================================================
+   4. MAIN CONTENT
+   ========================================================= */
+
+#content {
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    padding: 30px 40px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+#content-main {
+    width: 100% !important;
+
+    max-width: none !important;
+
+    float: none !important;
+}
+
+
+/* =========================================================
+   5. DASHBOARD
+   ========================================================= */
+
+.dashboard {
+    width: 100% !important;
+}
+
+
+.dashboard #content-main {
+    width: 100% !important;
+}
+
+
+/* =========================================================
+   6. DASHBOARD MODULES
+   ========================================================= */
+
+.dashboard .module {
+    width: 100% !important;
+
+    max-width: none !important;
+
+    box-sizing: border-box !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #d9e1dc !important;
+
+    border-radius: 10px !important;
+
+    overflow: hidden !important;
+
+    box-shadow: 0 2px 8px rgba(25, 135, 84, 0.06) !important;
+
+    margin-bottom: 25px !important;
+}
+
+
+/* Module headings */
+
+.dashboard .module caption,
+.dashboard .module h2,
+.module caption,
+.module h2 {
+    background: #e8f4ed !important;
+
+    color: #146c43 !important;
+
+    font-weight: 600 !important;
+
+    padding: 12px 15px !important;
+
+    border: none !important;
+}
+
+
+/* First dashboard module */
+
+.dashboard .module:first-child caption,
+.dashboard .module:first-child h2 {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   7. MODULE TABLES
+   ========================================================= */
+
+.dashboard .module table {
+    width: 100% !important;
+
+    background: #ffffff !important;
+
+    border-collapse: collapse !important;
+}
+
+
+.dashboard .module th,
+.dashboard .module td {
+    padding: 12px !important;
+
+    border-bottom: 1px solid #e2e8e4 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   8. DASHBOARD MODEL NAMES
+   =========================================================
+
+   IMPORTANT:
+   This fixes the blank green area seen in your screenshot.
+   Django puts model names inside <th>.
+   */
+
+.dashboard .module table th {
+    background: #ffffff !important;
+
+    color: #34423a !important;
+
+    text-align: left !important;
+
+    font-weight: 600 !important;
+}
+
+
+/* Model name links */
+
+.dashboard .module table th a,
+.dashboard .module table th a:link,
+.dashboard .module table th a:visited {
+    display: block !important;
+
+    background: transparent !important;
+
+    color: #146c43 !important;
+
+    font-weight: 700 !important;
+
+    text-decoration: none !important;
+
+    padding: 6px 4px !important;
+}
+
+
+/* Model name hover */
+
+.dashboard .module table th a:hover {
+    background: #e8f4ed !important;
+
+    color: #198754 !important;
+
+    text-decoration: none !important;
+
+    border-radius: 5px !important;
+}
+
+
+/* =========================================================
+   9. DASHBOARD ADD / CHANGE AREA
+   ========================================================= */
+
+.dashboard .module table td {
+    background: #ffffff !important;
+
+    color: #34423a !important;
+
+    text-align: right !important;
+}
+
+
+/* Add and Change links */
+
+.dashboard .module table td a {
+    color: #198754 !important;
+
+    font-weight: 700 !important;
+
+    text-decoration: none !important;
+
+    margin-left: 15px !important;
+}
+
+
+.dashboard .module table td a:hover {
+    color: #c94c4c !important;
+
+    text-decoration: underline !important;
+}
+
+
+/* =========================================================
+   10. TABLE HEADINGS
+   ========================================================= */
+
+.module th {
+    color: #34423a !important;
+
+    font-weight: 600 !important;
+}
+
+
+.module th a {
+    color: #198754 !important;
+}
+
+
+/* =========================================================
+   11. GENERAL LINKS
+   ========================================================= */
+
+a:link,
+a:visited {
+    color: #198754 !important;
+
+    text-decoration: none !important;
+}
+
+
+a:hover {
+    color: #c94c4c !important;
+
+    text-decoration: underline !important;
+}
+
+
+/* Keep header white */
+
+#header a:link,
+#header a:visited,
+#header a:hover {
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+}
+
+
+/* =========================================================
+   12. BUTTONS
+   ========================================================= */
+
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+button {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    border: none !important;
+
+    border-radius: 6px !important;
+
+    padding: 10px 18px !important;
+
+    cursor: pointer !important;
+
+    font-weight: 600 !important;
+
+    transition: all 0.2s ease !important;
+}
+
+
+.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.submit-row input:hover,
+button:hover {
+    background: #146c43 !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   13. DELETE BUTTON
+   ========================================================= */
+
+.deletelink,
+.deletelink-box a {
+    background: #c94c4c !important;
+
+    color: #ffffff !important;
+
+    border-radius: 6px !important;
+
+    padding: 10px 15px !important;
+
+    font-weight: 600 !important;
+}
+
+
+.deletelink:hover,
+.deletelink-box a:hover {
+    background: #a83232 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   14. SAVE BUTTONS
+   ========================================================= */
+
+.submit-row input[name="_save"],
+.submit-row input[name="_continue"],
+.submit-row input[name="_addanother"] {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+}
+
+
+.submit-row input[name="_save"]:hover,
+.submit-row input[name="_continue"]:hover,
+.submit-row input[name="_addanother"]:hover {
+    background: #146c43 !important;
+}
+
+
+/* =========================================================
+   15. FORM FIELDS
+   ========================================================= */
+
+input,
+textarea,
+select {
+    border: 1px solid #cfd9d3 !important;
+
+    border-radius: 6px !important;
+
+    background: #ffffff !important;
+
+    color: #34423a !important;
+
+    box-sizing: border-box !important;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #198754 !important;
+
+    box-shadow: 0 0 0 2px rgba(25, 135, 84, 0.14) !important;
+
+    outline: none !important;
+}
+
+
+/* =========================================================
+   16. BREADCRUMBS
+   ========================================================= */
+
+div.breadcrumbs {
+    background: #e8f4ed !important;
+
+    color: #146c43 !important;
+
+    border: none !important;
+
+    border-bottom: 1px solid #d9e1dc !important;
+
+    padding: 12px 25px !important;
+}
+
+
+div.breadcrumbs a {
+    color: #198754 !important;
+
+    font-weight: 500 !important;
+}
+
+
+div.breadcrumbs a:hover {
+    color: #c94c4c !important;
+}
+
+
+/* =========================================================
+   17. RECENT ACTIONS
+   ========================================================= */
+
+#content-related {
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 30px 0 0 0 !important;
+
+    float: none !important;
+}
+
+
+#recent-actions-module {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #d9e1dc !important;
+
+    border-radius: 10px !important;
+
+    overflow: hidden !important;
+}
+
+
+#recent-actions-module h2 {
+    background: #f9e8e8 !important;
+
+    color: #a83232 !important;
+
+    padding: 12px 15px !important;
+}
+
+
+/* =========================================================
+   18. OBJECT TOOLS
+   ========================================================= */
+
+.object-tools a {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    border-radius: 6px !important;
+
+    padding: 9px 15px !important;
+
+    font-weight: 600 !important;
+}
+
+
+.object-tools a:hover {
+    background: #c94c4c !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   19. SELECTOR / ACTIVE ITEMS
+   ========================================================= */
+
+.selector-chosen h2 {
+    background: #e8f4ed !important;
+
+    color: #146c43 !important;
+}
+
+
+.selector-chosen {
+    border-color: #d9e1dc !important;
+}
+
+
+/* =========================================================
+   20. SUCCESS MESSAGES
+   ========================================================= */
+
+ul.messagelist li.success {
+    background: #e8f4ed !important;
+
+    border-left: 5px solid #198754 !important;
+
+    color: #146c43 !important;
+
+    border-radius: 5px !important;
+
+    padding: 12px !important;
+}
+
+
+/* =========================================================
+   21. ERROR MESSAGES
+   ========================================================= */
+
+ul.messagelist li.error {
+    background: #f9e8e8 !important;
+
+    border-left: 5px solid #c94c4c !important;
+
+    color: #a83232 !important;
+
+    border-radius: 5px !important;
+
+    padding: 12px !important;
+}
+
+
+/* =========================================================
+   22. WARNING MESSAGES
+   ========================================================= */
+
+ul.messagelist li.warning {
+    background: #f9e8e8 !important;
+
+    border-left: 5px solid #c94c4c !important;
+
+    color: #a83232 !important;
+
+    border-radius: 5px !important;
+
+    padding: 12px !important;
+}
+
+
+/* =========================================================
+   23. PAGINATION
+   ========================================================= */
+
+.paginator {
+    background: #ffffff !important;
+
+    border-top: 1px solid #d9e1dc !important;
+}
+
+
+.paginator a {
+    color: #198754 !important;
+}
+
+
+.paginator a:hover {
+    color: #c94c4c !important;
+}
+
+
+/* =========================================================
+   24. CHANGE LIST
+   ========================================================= */
+
+#changelist {
+    background: #ffffff !important;
+
+    color: #34423a !important;
+
+    border-radius: 10px !important;
+
+    overflow: hidden !important;
+
+    border: 1px solid #d9e1dc !important;
+}
+
+
+/* Results area */
+
+#changelist .results {
+    background: #ffffff !important;
+
+    color: #34423a !important;
+}
+
+
+/* =========================================================
+   25. CHANGE LIST FILTER
+   ========================================================= */
+
+#changelist-filter {
+    background: #f9e8e8 !important;
+
+    border-left: 1px solid #ead4d4 !important;
+}
+
+
+#changelist-filter h2 {
+    background: #c94c4c !important;
+
+    color: #ffffff !important;
+
+    padding: 12px !important;
+}
+
+
+#changelist-filter h3 {
+    color: #a83232 !important;
+
+    font-weight: 600 !important;
+}
+
+
+#changelist-filter a {
+    color: #198754 !important;
+}
+
+
+#changelist-filter a:hover {
+    color: #c94c4c !important;
+}
+
+
+/* =========================================================
+   26. CHANGE LIST TABLE
+   ========================================================= */
+
+#result_list {
+    width: 100% !important;
+
+    background: #ffffff !important;
+
+    color: #34423a !important;
+
+    border-collapse: collapse !important;
+}
+
+
+/* Table headings */
+
+#result_list thead th {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    padding: 12px !important;
+}
+
+
+#result_list thead th a {
+    color: #ffffff !important;
+}
+
+
+/* Table body */
+
+#result_list tbody {
+    background: #ffffff !important;
+
+    color: #34423a !important;
+}
+
+
+/* Rows */
+
+#result_list tbody tr {
+    background: #ffffff !important;
+
+    color: #34423a !important;
+}
+
+
+#result_list tbody tr:nth-child(even) {
+    background: #f8faf9 !important;
+}
+
+
+#result_list tbody tr:hover {
+    background: #e8f4ed !important;
+}
+
+
+/* Cells */
+
+#result_list tbody td,
+#result_list tbody th {
+    background: transparent !important;
+
+    color: #34423a !important;
+
+    padding: 11px !important;
+
+    border-bottom: 1px solid #e2e8e4 !important;
+}
+
+
+/* Links */
+
+#result_list tbody td a,
+#result_list tbody th a {
+    color: #198754 !important;
+
+    font-weight: 600 !important;
+
+    text-decoration: none !important;
+}
+
+
+#result_list tbody td a:hover,
+#result_list tbody th a:hover {
+    color: #a83232 !important;
+
+    text-decoration: underline !important;
+}
+
+
+/* =========================================================
+   27. ADMISSIONS PAGE - EXTRA VISIBILITY
+   =========================================================
+
+   This section specifically protects the Admissions
+   records from the general green theme.
+   */
+
+#changelist .results,
+#changelist .results table,
+#changelist .results tbody,
+#changelist .results tbody tr {
+    background: #ffffff !important;
+
+    color: #34423a !important;
+}
+
+
+/* Admissions table cells */
+
+#changelist .results tbody td,
+#changelist .results tbody th {
+    background: #ffffff !important;
+
+    color: #34423a !important;
+
+    font-weight: 500 !important;
+
+    padding: 13px !important;
+}
+
+
+/* Alternating Admissions rows */
+
+#changelist .results tbody tr:nth-child(even) td,
+#changelist .results tbody tr:nth-child(even) th {
+    background: #f4f6f5 !important;
+}
+
+
+/* Admissions hover */
+
+#changelist .results tbody tr:hover td,
+#changelist .results tbody tr:hover th {
+    background: #e8f4ed !important;
+}
+
+
+/* Admissions record links */
+
+#changelist .results tbody td a,
+#changelist .results tbody th a {
+    color: #198754 !important;
+
+    font-weight: 700 !important;
+
+    text-decoration: none !important;
+}
+
+
+#changelist .results tbody td a:hover,
+#changelist .results tbody th a:hover {
+    color: #c94c4c !important;
+
+    text-decoration: underline !important;
+}
+
+
+/* Admissions column headings */
+
+#changelist .results thead th {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    font-weight: 700 !important;
+}
+
+
+#changelist .results thead th a {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   28. ADMISSIONS OBJECT TOOLS
+   ========================================================= */
+
+#changelist .object-tools a {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    border-radius: 6px !important;
+
+    font-weight: 700 !important;
+}
+
+
+#changelist .object-tools a:hover {
+    background: #146c43 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   29. ADMISSIONS ACTION BAR
+   ========================================================= */
+
+#changelist .actions {
+    background: #f4f6f5 !important;
+
+    color: #34423a !important;
+
+    border-bottom: 1px solid #d9e1dc !important;
+
+    padding: 10px !important;
+}
+
+
+#changelist .actions select {
+    background: #ffffff !important;
+
+    color: #34423a !important;
+
+    border: 1px solid #cfd9d3 !important;
+}
+
+
+/* =========================================================
+   30. ADMISSIONS TITLE
+   ========================================================= */
+
+#changelist h1 {
+    color: #146c43 !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   31. CHECKBOXES
+   ========================================================= */
+
+input[type="checkbox"] {
+    accent-color: #198754 !important;
+}
+
+
+/* =========================================================
+   32. RADIO BUTTONS
+   ========================================================= */
+
+input[type="radio"] {
+    accent-color: #198754 !important;
+}
+
+
+/* =========================================================
+   33. FIELDSET HEADINGS
+   ========================================================= */
+
+fieldset.module h2 {
+    background: #e8f4ed !important;
+
+    color: #146c43 !important;
+
+    padding: 12px !important;
+}
+
+
+/* =========================================================
+   34. COLLAPSED FIELDSETS
+   ========================================================= */
+
+fieldset.collapsed h2 {
+    background: #e8f4ed !important;
+
+    color: #146c43 !important;
+}
+
+
+/* =========================================================
+   35. FULL WIDTH TABLES
+   ========================================================= */
+
+.dashboard .module table,
+#result_list {
+    width: 100% !important;
+}
+
+
+/* =========================================================
+   36. DJANGO SIDEBAR
+   ========================================================= */
+
+#nav-sidebar {
+    background: #e8f4ed !important;
+
+    color: #146c43 !important;
+
+    border-right: 1px solid #d9e1dc !important;
+}
+
+
+/* Every sidebar module */
+
+#nav-sidebar .module {
+    background: #e8f4ed !important;
+
+    border-bottom: 1px solid #d9e1dc !important;
+
+    margin: 0 !important;
+}
+
+
+/* Sidebar application names */
+
+#nav-sidebar .module caption,
+#nav-sidebar .module h2 {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    font-weight: 700 !important;
+
+    padding: 11px 12px !important;
+
+    border: none !important;
+}
+
+
+/* Sidebar application heading links */
+
+#nav-sidebar .module caption a,
+#nav-sidebar .module h2 a {
+    color: #ffffff !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* Sidebar links */
+
+#nav-sidebar a {
+    color: #146c43 !important;
+
+    font-weight: 600 !important;
+
+    display: block !important;
+
+    padding: 8px 12px !important;
+}
+
+
+/* Sidebar hover */
+
+#nav-sidebar a:hover {
+    background: #c94c4c !important;
+
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+}
+
+
+/* Current/selected model */
+
+#nav-sidebar .current-model {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+}
+
+
+#nav-sidebar .current-model a {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   37. ⭐ ADMISSIONS SIDEBAR SECTION
+   =========================================================
+
+   Admissions gets a strong green appearance so it is
+   immediately visible in the Django Admin navigation.
+   */
+
+
+/* Admissions model links */
+
+#nav-sidebar a[href*="/admissions/"] {
+    background: #e8f4ed !important;
+
+    color: #146c43 !important;
+
+    font-weight: 700 !important;
+
+    border-left: 5px solid #198754 !important;
+
+    padding-left: 10px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Admissions hover */
+
+#nav-sidebar a[href*="/admissions/"]:hover {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    border-left: 5px solid #146c43 !important;
+}
+
+
+/* Admissions current model */
+
+#nav-sidebar .current-model a[href*="/admissions/"] {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    border-left: 5px solid #146c43 !important;
+}
+
+
+/* =========================================================
+   38. ADMISSIONS APP MODULE
+   =========================================================
+
+   Modern browsers support :has(), allowing the whole
+   Admissions app section to receive a green border.
+   */
+
+#nav-sidebar .module:has(a[href*="/admissions/"]) {
+    background: #ffffff !important;
+
+    border: 2px solid #198754 !important;
+
+    border-radius: 8px !important;
+
+    overflow: hidden !important;
+
+    margin-bottom: 10px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Admissions application heading */
+
+#nav-sidebar .module:has(a[href*="/admissions/"]) caption,
+#nav-sidebar .module:has(a[href*="/admissions/"]) h2 {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* Admissions heading link */
+
+#nav-sidebar .module:has(a[href*="/admissions/"]) caption a,
+#nav-sidebar .module:has(a[href*="/admissions/"]) h2 a {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   39. ADMISSIONS DASHBOARD LINKS
+   ========================================================= */
+
+.dashboard a[href*="/admissions/"] {
+    color: #198754 !important;
+
+    font-weight: 700 !important;
+}
+
+
+.dashboard a[href*="/admissions/"]:hover {
+    color: #c94c4c !important;
+
+    text-decoration: underline !important;
+}
+
+
+/* =========================================================
+   40. SIDEBAR TOGGLE
+   ========================================================= */
+
+.toggle-nav-sidebar {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+
+    border: none !important;
+}
+
+
+.toggle-nav-sidebar:hover {
+    background: #c94c4c !important;
+}
+
+
+/* =========================================================
+   41. SEARCH BOX
+   ========================================================= */
+
+#toolbar {
+    background: #ffffff !important;
+
+    border-bottom: 1px solid #d9e1dc !important;
+}
+
+
+#toolbar input[type="text"] {
+    border: 1px solid #cfd9d3 !important;
+
+    background: #ffffff !important;
+
+    color: #34423a !important;
+}
+
+
+#toolbar input[type="submit"] {
+    background: #198754 !important;
+
+    color: #ffffff !important;
+}
+
+
+#toolbar input[type="submit"]:hover {
+    background: #c94c4c !important;
+}
+
+
+/* =========================================================
+   42. HELP TEXT
+   ========================================================= */
+
+.help,
+.helptext {
+    color: #68756e !important;
+}
+
+
+/* =========================================================
+   43. REQUIRED FIELDS
+   ========================================================= */
+
+.required label,
+label.required {
+    color: #34423a !important;
+}
+
+
+.required label:after {
+    color: #c94c4c !important;
+}
+
+
+/* =========================================================
+   44. FORM ROWS
+   ========================================================= */
+
+.form-row {
+    border-bottom: 1px solid #e1e7e3 !important;
+}
+
+
+/* =========================================================
+   45. ADMIN FOOTER
+   ========================================================= */
+
+#footer {
+    background: #e8f4ed !important;
+
+    color: #146c43 !important;
+
+    padding: 20px !important;
+
+    text-align: center !important;
+
+    border-top: 1px solid #d9e1dc !important;
+}
+
+
+#footer a {
+    color: #198754 !important;
+}
+
+
+#footer a:hover {
+    color: #c94c4c !important;
+}
+
+
+/* =========================================================
+   46. DESKTOP
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+    #content {
+        padding: 35px 50px !important;
+    }
+
+
+    #header {
+        padding: 0 35px !important;
+    }
+
+
+    #branding h1 {
+        font-size: 22px !important;
+    }
+
+
+    .dashboard .module {
+        margin-bottom: 30px !important;
+    }
+
+
+    #nav-sidebar a {
+        padding: 9px 14px !important;
+    }
+
+
+    /* Dashboard model names */
+
+    .dashboard .module table th a {
+        font-size: 15px !important;
+    }
+
+
+    /* Dashboard Add/Change */
+
+    .dashboard .module table td a {
+        font-size: 14px !important;
+    }
+}
+
+
+/* =========================================================
+   47. LAPTOP
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+    #content {
+        padding: 30px 25px !important;
+    }
+
+
+    #header {
+        padding: 0 20px !important;
+    }
+}
+
+
+/* =========================================================
+   48. TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    #content {
+        padding: 25px 18px !important;
+    }
+
+
+    #header {
+        min-height: 60px !important;
+
+        padding: 10px 18px !important;
+
+        flex-wrap: wrap !important;
+    }
+
+
+    #branding h1 {
+        font-size: 19px !important;
+    }
+
+
+    #user-tools {
+        font-size: 12px !important;
+    }
+
+
+    .dashboard .module {
+        overflow-x: auto !important;
+    }
+
+
+    .dashboard .module table {
+        min-width: 650px !important;
+    }
+
+
+    #result_list {
+        min-width: 700px !important;
+    }
+
+
+    #changelist {
+        overflow-x: auto !important;
+    }
+
+
+    #changelist-filter {
+        border-left: none !important;
+
+        border-top: 1px solid #ead4d4 !important;
+    }
+
+
+    .object-tools {
+        margin-bottom: 15px !important;
+    }
+
+
+    .object-tools a {
+        padding: 8px 12px !important;
+    }
+
+
+    /* Admissions remain visible */
+
+    #nav-sidebar a[href*="/admissions/"] {
+        border-left-width: 4px !important;
+    }
+
+
+    /* Dashboard model names */
+
+    .dashboard .module table th a {
+        color: #146c43 !important;
+
+        font-weight: 700 !important;
+    }
+
+
+    /* Dashboard controls */
+
+    .dashboard .module table td a {
+        color: #198754 !important;
+    }
+}
+
+
+/* =========================================================
+   49. MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px !important;
+    }
+
+
+    /* Header */
+
+    #header {
+        min-height: auto !important;
+
+        padding: 12px !important;
+
+        display: block !important;
+    }
+
+
+    #branding {
+        width: 100% !important;
+
+        margin-bottom: 8px !important;
+    }
+
+
+    #branding h1 {
+        font-size: 17px !important;
+
+        line-height: 1.3 !important;
+    }
+
+
+    #user-tools {
+        width: 100% !important;
+
+        font-size: 11px !important;
+
+        line-height: 1.6 !important;
+    }
+
+
+    /* Main content */
+
+    #content {
+        padding: 18px 10px !important;
+    }
+
+
+    /* Breadcrumbs */
+
+    div.breadcrumbs {
+        padding: 10px 12px !important;
+
+        font-size: 12px !important;
+
+        overflow-x: auto !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    /* Dashboard */
+
+    .dashboard .module {
+        border-radius: 7px !important;
+
+        margin-bottom: 18px !important;
+
+        overflow-x: auto !important;
+    }
+
+
+    .dashboard .module h2,
+    .dashboard .module caption {
+        font-size: 14px !important;
+
+        padding: 10px !important;
+    }
+
+
+    .dashboard .module th,
+    .dashboard .module td {
+        padding: 9px !important;
+
+        font-size: 12px !important;
+    }
+
+
+    /* Make dashboard model names visible */
+
+    .dashboard .module table th {
+        background: #ffffff !important;
+
+        color: #34423a !important;
+    }
+
+
+    .dashboard .module table th a {
+        color: #146c43 !important;
+
+        font-weight: 700 !important;
+
+        display: block !important;
+    }
+
+
+    /* Dashboard Add/Change */
+
+    .dashboard .module table td {
+        background: #ffffff !important;
+
+        color: #34423a !important;
+    }
+
+
+    .dashboard .module table td a {
+        color: #198754 !important;
+
+        font-weight: 700 !important;
+
+        margin-left: 8px !important;
+    }
+
+
+    /* Tables */
+
+    #result_list {
+        min-width: 650px !important;
+    }
+
+
+    #result_list th,
+    #result_list td {
+        font-size: 12px !important;
+
+        padding: 8px !important;
+    }
+
+
+    /* Admissions */
+
+    #changelist .results tbody td,
+    #changelist .results tbody th {
+        background: #ffffff !important;
+
+        color: #34423a !important;
+
+        font-size: 12px !important;
+
+        padding: 10px !important;
+    }
+
+
+    #changelist .results tbody tr:nth-child(even) td,
+    #changelist .results tbody tr:nth-child(even) th {
+        background: #f4f6f5 !important;
+    }
+
+
+    /* Buttons */
+
+    .button,
+    input[type="submit"],
+    input[type="button"],
+    .submit-row input,
+    button {
+        padding: 9px 12px !important;
+
+        font-size: 12px !important;
+    }
+
+
+    /* Object tools */
+
+    .object-tools {
+        display: flex !important;
+
+        flex-wrap: wrap !important;
+
+        gap: 7px !important;
+    }
+
+
+    .object-tools li {
+        margin: 0 !important;
+    }
+
+
+    .object-tools a {
+        font-size: 12px !important;
+
+        padding: 8px 10px !important;
+    }
+
+
+    /* Forms */
+
+    input,
+    textarea,
+    select {
+        max-width: 100% !important;
+
+        font-size: 14px !important;
+    }
+
+
+    textarea {
+        min-height: 100px !important;
+    }
+
+
+    /* Recent actions */
+
+    #content-related {
+        margin-top: 20px !important;
+    }
+
+
+    /* Change list filter */
+
+    #changelist-filter {
+        width: 100% !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* Messages */
+
+    ul.messagelist li {
+        font-size: 13px !important;
+
+        padding: 10px !important;
+    }
+
+
+    /* Sidebar */
+
+    #nav-sidebar a {
+        padding: 9px 10px !important;
+    }
+
+
+    /* Admissions sidebar */
+
+    #nav-sidebar a[href*="/admissions/"] {
+        background: #e8f4ed !important;
+
+        color: #146c43 !important;
+
+        border-left: 4px solid #198754 !important;
+    }
+
+
+    #nav-sidebar a[href*="/admissions/"]:hover {
+        background: #198754 !important;
+
+        color: #ffffff !important;
+    }
+
+
+    /* Footer */
+
+    #footer {
+        font-size: 12px !important;
+
+        padding: 15px !important;
+    }
+}
+
+
+/* =========================================================
+   50. VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    #branding h1 {
+        font-size: 15px !important;
+    }
+
+
+    #content {
+        padding: 15px 8px !important;
+    }
+
+
+    .button,
+    input[type="submit"],
+    input[type="button"],
+    .submit-row input,
+    button {
+        width: 100% !important;
+
+        margin-bottom: 5px !important;
+    }
+
+
+    .object-tools a {
+        display: block !important;
+
+        width: 100% !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+    }
+
+
+    #nav-sidebar a[href*="/admissions/"] {
+        font-size: 13px !important;
+    }
+
+
+    .dashboard .module table th a {
+        font-size: 13px !important;
+    }
+
+
+    .dashboard .module table td a {
+        font-size: 12px !important;
+    }
+}
+
+
+/* =========================================================
+   END OF PARACLETE ADMIN THEME
+
+   GREEN + FAINT RED
+   WHITE TEXT
+   VISIBLE ADMISSIONS
+   VISIBLE MODEL NAMES
+   NO BLUE
+   NO BLACK
+   FULLY RESPONSIVE
+   ========================================================= */
