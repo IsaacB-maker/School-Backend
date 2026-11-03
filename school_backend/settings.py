@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'admissions',
     'school',
+    'administration',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,25 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+# Administration portal CORS configuration
+CORS_ALLOW_ALL_ORIGINS = False
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
+
+CORS_ALLOW_CREDENTIALS = True
+
+# Trusted frontend origins for CSRF protection
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
+
+# Development session cookie configuration
+SESSION_COOKIE_SAMESITE = "Lax"
+CSRF_COOKIE_SAMESITE = "Lax"
 
 ROOT_URLCONF = 'school_backend.urls'
 
